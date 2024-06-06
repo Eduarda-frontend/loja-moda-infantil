@@ -1,0 +1,36 @@
+:root{
+    --branco:#fff;
+    --rosa: #fe8685;
+    --azul-claro:#79dcc8;
+    --azul:#029cda;
+    --amarelo:#fec504;
+    --roxo:#6d2885;
+    --pink:#fd0f81;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    padding-top: 10px;
+    overflow-x: hidden;
+}
+
+header img{
+    width: 12%;
+}
+
+.header{
+    margin-top: 20px;
+}
+
+.nav .nav-link.active{
+    background-color: var(--rosa);
+    color: #fff;
+}
+
