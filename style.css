@@ -14,14 +14,20 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #ccc;
+}
+
 .container{
+    margin-top: 5%;
     max-width: 1024px;
     width: 100%;
     padding-top: 10px;
     overflow-x: hidden;
+    background-color: var(--branco);
 }
 
-header img{
+.navbar img{
     width: 12%;
 }
 
@@ -29,8 +35,13 @@ header img{
     margin-top: 20px;
 }
 
-.nav .nav-link.active{
+.nav-pills .nav-link.active{
     background-color: var(--rosa);
+    color: #fff;
+}
+
+.nav-pills .nav-link:hover{
+    background-color: #fda4a4;
     color: #fff;
 }
 
