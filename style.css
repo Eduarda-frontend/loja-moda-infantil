@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #ccc;
-}
-
 .container{
     margin-top: 5%;
     max-width: 1024px;
@@ -26,22 +22,34 @@ body{
     overflow-x: hidden;
     background-color: var(--branco);
 }
-
-.navbar img{
-    width: 12%;
+.navbar{
+    background-color: black;
 }
 
-.header{
-    margin-top: 20px;
+header img{
+    width: 8%;
 }
 
-.nav-pills .nav-link.active{
-    background-color: var(--rosa);
+.barra-pesquisa{
+    background-color:var(--rosa);
+}
+
+.nav li a.active{
     color: #fff;
 }
 
-.nav-pills .nav-link:hover{
-    background-color: #fda4a4;
+.nav li a:hover{
     color: #fff;
 }
 
+.nav li a{
+    color: #fff;
+}
+
+.social-links{
+    list-style: none;
+}
+
+.social-links i{
+    color: #fff;
+}
