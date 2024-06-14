@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header> 
+        <header id="cabecalho"> 
             <div class="d-flex justify-content-between barra-pesquisa ">
                 <ul class="social-links d-flex m-0">
                     <li class="fs-5">
@@ -35,10 +35,25 @@
                     <input type="search" id="search" class="form-control-md" placeholder="Search" aria-label="Search">
                 </form>
             </div>
-            <div class="px-5 py-4">
-                <img src="./img/mm.png" alt="Logo mm kids">
+            <div class="px-5 py-4 d-flex justify-content-between">
+                    <img src="./img/mm.png" alt="Logo mm kids">
+                <div>
+                    <ul class="nav nav-pills categorias">
+                        <li class="nav-item rounded px-3 fw-bold">
+                            <a href="#" class="nav-link">Meninas</a>
+                        </li>
+
+                        <li class="nav-item mx-5 rounded px-3 fw-bold">
+                            <a href="#" class="nav-link">Meninos</a>
+                        </li>
+
+                        <li class="nav-item rounded px-3 fw-bold">
+                            <a href="#" class="nav-link">Categoria</a>
+                        </li>
+                    </ul>
+                </div>
             </div>    
-            <div class=" navbar navbar-expand-md content-fluid">
+            <div class=" navbar navbar-expand-md content-fluid informacoes-uteis">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse"  data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,8 +66,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="mx-2 nav-link" href="categoria">
-                                <i class="bi bi-bag-heart"></i>
-                                Produtos</a>
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Perguntas Frequentes</a>
                         </li>
                         <li class="nav-item">
                             <a class="mx-2 nav-link" href="minha-conta">
@@ -63,7 +78,8 @@
                 </nav>
             </div>       
         </header>
-        <main>
+        <main data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+
             <section class="carousel">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

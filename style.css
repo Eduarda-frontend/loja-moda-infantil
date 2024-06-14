@@ -34,15 +34,17 @@ header img{
     background-color:var(--rosa);
 }
 
-.nav li a.active{
+.informacoes-uteis li a.active{
     color: #fff;
 }
 
-.nav li a:hover{
+.informacoes-uteis li a:hover{
+    background-color: #393737;
     color: #fff;
 }
 
-.nav li a{
+.informacoes-uteis li a,
+.categorias li a{
     color: #fff;
 }
 
@@ -51,5 +53,21 @@ header img{
 }
 
 .social-links i{
+    color: #fff;
+}
+
+.categorias li:first-child{
+    background-color: var(--pink);
+}
+
+.categorias li:nth-child(2){
+    background-color: var(--azul);
+}
+
+.categorias li:nth-child(3){
+    background-color: var(--roxo);
+}
+
+.categorias li a:hover{
     color: #fff;
 }
