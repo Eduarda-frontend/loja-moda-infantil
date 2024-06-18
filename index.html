@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sniglet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header id="cabecalho"> 
+        <header id="cabecalho" class="sticky-top"> 
             <div class="d-flex justify-content-between barra-pesquisa ">
                 <ul class="social-links d-flex m-0">
                     <li class="fs-5">
@@ -35,15 +35,15 @@
                     <input type="search" id="search" class="form-control-md" placeholder="Search" aria-label="Search">
                 </form>
             </div>
-            <div class="px-5 py-4 d-flex justify-content-between">
-                    <img src="./img/mm.png" alt="Logo mm kids">
-                <div>
+            <div class="px-5 py-4 d-md-flex  justify-content-md-between bg-white">
+                    <img class="logo" src="./img/mm.png" alt="Logo mm kids">
+                <div class="d-flex align-items-center" >
                     <ul class="nav nav-pills categorias">
                         <li class="nav-item rounded px-3 fw-bold">
                             <a href="#" class="nav-link">Meninas</a>
                         </li>
 
-                        <li class="nav-item mx-5 rounded px-3 fw-bold">
+                        <li class="nav-item rounded px-3 mx-sm-4 fw-bold">
                             <a href="#" class="nav-link">Meninos</a>
                         </li>
 
@@ -53,30 +53,40 @@
                     </ul>
                 </div>
             </div>    
-            <div class=" navbar navbar-expand-md content-fluid informacoes-uteis">
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse"  data-bs-target="#menu">
+            <div class=" navbar navbar-expand-sm d-flex content-fluid informacoes-uteis">
+                <button type="button" class="navbar-toggler mb-2" data-bs-toggle="collapse"  data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-center" id="menu">
                     <ul class="navbar-nav nav nav-pills">
                         <li class="nav-item">
-                            <a class="mx-2 nav-link" href="sobre">
+                            <a class="mx-md-2 nav-link active" href="#mais-pedidos">
+                                <i class="bi bi-heart"></i>
+                                Mais Pedidos</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="mx-md-2 nav-link" href="#categorias">
+                                <i class="bi bi-bag-heart"></i>
+                                Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="mx-md-2 nav-link" href="#">
                                 <i class="bi bi-house-door me-1"></i>
                                 Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="mx-2 nav-link" href="categoria">
+                            <a class="mx-md-2 nav-link" href="#">
                                 <i class="bi bi-chat-left-text me-1"></i>
                                 Perguntas Frequentes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="mx-2 nav-link" href="minha-conta">
+                            <a class="mx-md-2 nav-link" href="#">
                                 <i class="bi bi-person-lines-fill pe-1"></i>
                                 Minha conta</a>
                         </li>
                     </ul>
                 </nav>
-            </div>       
+            </div>
         </header>
         <main data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
 
@@ -102,46 +112,82 @@
                 </div>
                 </div>
             </section>
-            <section class="container">
+            
+            <section id="mais-pedidos" class="pt-5 ">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="body">
-                                <h5 class="card-title">Conjunto Masculino</h5>
-                                <p class="card-subtitle">Tamanho: 06 meses a 4 anos</p>
+                    <h2 class="title text-center">Mais <span class="text-colored">Pedidos</span></h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="body">
+                                    <h5 class="card-title">Conjunto Masculino</h5>
+                                    <p class="card-subtitle">Tamanho: 06 meses a 4 anos</p>
+                                </div>
+                                <img class="my-3" src="./img/produtos/0-24meses(1).jpg" alt="Conjunto Masculino Dinossauro">
+                                <footer>
+                                    <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
+                                </footer>
                             </div>
-                            <img class="my-3" src="./img/produtos/0-24meses(1).jpg" alt="Conjunto Masculino Dinossauro">
-                            <footer>
-                                <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
-                            </footer>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="body">
-                                <h5 class="card-title">Conjunto Masculino</h5>
-                                <p class="card-subtitle">Tamanho: 06 meses a 2 anos</p>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="body">
+                                    <h5 class="card-title">Vestido</h5>
+                                    <p class="card-subtitle">Tamanho: 06 meses a 2 anos</p>
+                                </div>
+                                <img class="my-3" src="./img/produtos/0-24meses(2).jpg" alt="Conjunto Masculino Dinossauro">
+                                <footer>
+                                    <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
+                                </footer>
                             </div>
-                            <img class="my-3" src="./img/produtos/0-24meses(2).jpg" alt="Conjunto Masculino Dinossauro">
-                            <footer>
-                                <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
-                            </footer>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card">
-                            <div class="body">
-                                <h5 class="card-title">Conjunto Masculino</h5>
-                                <p class="card-subtitle">Tamanho: 06 meses a 2 anos</p>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="body">
+                                    <h5 class="card-title">Body feminino</h5>
+                                    <p class="card-subtitle">Tamanho: 06 meses a 2 anos</p>
+                                </div>
+                                <img class="my-3" src="./img/produtos/0-24meses.jpg" alt="Conjunto Masculino Dinossauro">
+                                <footer>
+                                    <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
+                                </footer>
                             </div>
-                            <img class="my-3" src="./img/produtos/0-24meses.jpg" alt="Conjunto Masculino Dinossauro">
-                            <footer>
-                                <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
-                            </footer>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="body">
+                                    <h5 class="card-title">Body feminino</h5>
+                                    <p class="card-subtitle">Tamanho: 06 meses a 2 anos</p>
+                                </div>
+                                <img class="my-3" src="./img/produtos/0-24meses.jpg" alt="Conjunto Masculino Dinossauro">
+                                <footer>
+                                    <a href="#" class="d-block btn btn-outline-primary">Ver detalhes</a>
+                                </footer>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
+            <section id="categorias" class="pt-5">
+                <div class="row">
+                    <h2 class="title text-center">
+                        Nossas <span class="text-colored">Categorias</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <nav class="nav flex-column ">
+                            <button class="nav-link fw-bold text-colored" type="button" data-bs-toggle="tab" data-bs-target="#meninas">Meninas</button>
+                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#vestidos">Vestidos</button>
+                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#conjuntos">Conjuntos</button>
+                            <button class="nav-link fw-bold text-colored" type="button" data-bs-toggle="tab" data-bs-target="#meninos">Meninos</button>
+                            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#conjuntos">Conjuntos</button>
+                        </nav>
+                    </div>
+                </div>
             </section>
         </main>
 </body>

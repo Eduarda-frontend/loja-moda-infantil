@@ -1,11 +1,13 @@
 :root{
     --branco:#fff;
     --rosa: #fe8685;
-    --azul-claro:#79dcc8;
+    --verde-claro:#505c59;
     --azul:#029cda;
     --amarelo:#fec504;
     --roxo:#6d2885;
     --pink:#fd0f81;
+    --textos: "Montserrat", sans-serif;
+    --titulos:"Pacifico", 'cursive';
 }
 
 *{
@@ -15,15 +17,20 @@
 }
 
 .container{
-    margin-top: 5%;
+    margin-top: 2%;
     max-width: 1024px;
     width: 100%;
     padding-top: 10px;
     overflow-x: hidden;
     background-color: var(--branco);
+    font-family: var(--textos);
 }
 .navbar{
     background-color: black;
+}
+
+.navbar-toggler{
+    background-color:var(--branco)
 }
 
 header img{
@@ -34,26 +41,22 @@ header img{
     background-color:var(--rosa);
 }
 
-.informacoes-uteis li a.active{
-    color: #fff;
+.nav-pills .nav-link.active{
+    background-color: #272727;
 }
 
 .informacoes-uteis li a:hover{
     background-color: #393737;
-    color: #fff;
 }
 
 .informacoes-uteis li a,
-.categorias li a{
-    color: #fff;
+.categorias li a,
+.social-links i{
+    font-family: var(--textos);
 }
 
 .social-links{
     list-style: none;
-}
-
-.social-links i{
-    color: #fff;
 }
 
 .categorias li:first-child{
@@ -68,6 +71,55 @@ header img{
     background-color: var(--roxo);
 }
 
-.categorias li a:hover{
+.categorias li a:hover,
+.informacoes-uteis li a,
+.categorias li a,
+.social-links i,
+.informacoes-uteis li a:hover,
+.nav-pills .nav-link.active{
     color: #fff;
+}
+
+nav ul li:nth-child(2){
+    display: none;
+}
+
+.title{
+    font-family: var(--titulos);
+}
+
+.text-colored,
+#categorias .nav .nav-link{
+    color: var(--roxo);
+}
+
+@media (max-width:768px){
+    .logo{
+        display: none;
+    }
+    header div:nth-child(2){
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:576px){
+    header div:first-child,
+    header div:nth-child(2){
+        display: none;
+    }
+
+    .navbar{
+        background-color: var(--rosa);
+        padding-left: 10px;
+    }
+
+    nav ul li:nth-child(2){
+        display: block;
+    }
+
+    .nav-pills .nav-link.active{
+        background-color: #f4b0b0;
+    }
 }
