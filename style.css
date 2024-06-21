@@ -1,7 +1,7 @@
 :root{
     --branco:#fff;
     --rosa: #fe8685;
-    --verde-claro:#505c59;
+    --verde-claro:#79dcc8;
     --azul:#029cda;
     --amarelo:#fec504;
     --roxo:#6d2885;
@@ -25,7 +25,7 @@
     background-color: var(--branco);
     font-family: var(--textos);
 }
-.navbar{
+.div-preta{
     background-color: black;
 }
 
@@ -41,7 +41,7 @@ header img{
     background-color:var(--rosa);
 }
 
-.nav-pills .nav-link.active{
+#menu .nav-pills .nav-link.active{
     background-color: #272727;
 }
 
@@ -63,6 +63,11 @@ header img{
     background-color: var(--pink);
 }
 
+.categorias .nav-pills .nav-link:first-child.active{
+    background-color: var(--pink);
+    font-weight: bold;
+}
+
 .categorias li:nth-child(2){
     background-color: var(--azul);
 }
@@ -71,12 +76,17 @@ header img{
     background-color: var(--roxo);
 }
 
-.categorias li a:hover,
-.informacoes-uteis li a,
-.categorias li a,
-.social-links i,
-.informacoes-uteis li a:hover,
-.nav-pills .nav-link.active{
+#cabecalho .social-links i,
+.categorias .nav-item .nav-link:hover,
+.categorias .nav-item .nav-link,
+.categorias .nav-pills .nav-item .nav-link.active,
+#menu li a,
+#menu li a:hover,
+#menu .nav-pills .nav-link.active{
+    color: #fff;
+}
+
+.categorias .nav-pills .nav-link.active{
     color: #fff;
 }
 
@@ -89,9 +99,34 @@ nav ul li:nth-child(2){
 }
 
 .text-colored,
-#categorias .nav .nav-link{
+#categorias .nav .nav-link,
+#produtos .nav .nav-link{
     color: var(--roxo);
 }
+
+
+#produtos .nav .nav-link.active,
+#produtos .nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+#produtos{
+    background:  linear-gradient(194deg, rgba(254,134,133,0.1) 5%, rgba(121,220,200,0.1) 100%);;
+}
+
+#mais-pedidos .card .card-header{
+    height:150px;
+}
+
+#mais-pedidos img{
+    width: 100%;
+    height: 300px;
+}
+
+#produtos img{
+    height: 240px;
+}
+
 
 @media (max-width:768px){
     .logo{
