@@ -114,10 +114,6 @@ nav ul li:nth-child(2){
     background:  linear-gradient(194deg, rgba(254,134,133,0.1) 5%, rgba(121,220,200,0.1) 100%);;
 }
 
-#mais-pedidos .card .card-header{
-    height:150px;
-}
-
 #mais-pedidos img{
     width: 100%;
     height: 300px;
@@ -127,6 +123,29 @@ nav ul li:nth-child(2){
     height: 240px;
 }
 
+.tamanhos-lista li{
+    list-style: none;
+    background-color: var(--branco);
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px #272727 solid; 
+}
+
+.tamanhos-lista li a{
+    color: #272727;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.tamanhos-lista li a:hover{
+    color: var(--rosa);
+}
+
+.card{
+    width: 80%;
+}
 
 @media (max-width:768px){
     .logo{
