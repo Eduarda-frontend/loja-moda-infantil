@@ -152,11 +152,19 @@ footer{
         justify-content: center;
     }
 
+    #cabecalho .logo{
+        display: none;
+    }
+
 }
 
 @media (max-width:576px){
     body{
         padding: 5px;
+    }
+
+    #cabecalho .logo{
+        display: block;
     }
 
     header div:first-child,
