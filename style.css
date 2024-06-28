@@ -147,6 +147,14 @@ footer{
     display: none;
 }
 
+#perguntas-frequentes{
+    padding: 0 8%;
+}
+/* 
+.accordion-button:not(.collapsed)
+{
+    background-color: #79dcc852;
+} */
 @media (max-width:768px){
     header div:nth-child(2){
         display: flex;
@@ -186,10 +194,4 @@ footer{
     #menu li a{
         color: #000;
     }
-
-    .informacoes-uteis li a:active{
-        background-color: var(--roxo);
-        font-weight: bold;
-    }
-    
 }
