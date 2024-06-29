@@ -34,6 +34,11 @@ $(document).ready(function(){
             };
         }
     });
-
-
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const modal = new bootstrap.Modal('#modal');
+    setTimeout(function(){
+        modal.show();
+    }, 3000);
+})
