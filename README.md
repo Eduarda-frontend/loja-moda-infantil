@@ -1,7 +1,3 @@
-Claro! Aqui está uma versão mais descontraída do README com emojis:
-
----
-
 # Loja Moda Infantil 👗👶
 
 Este é o código-fonte de uma loja online de moda infantil! O site foi feito usando HTML, CSS, JavaScript e Bootstrap. Ele é super interativo e responsivo, com várias funcionalidades legais para facilitar a navegação e a experiência do usuário. 🛍️
